@@ -41,11 +41,6 @@ public class Main {
         else if ( (yearint % 100) == 0){
             return false;
         }
-        else if ( (yearint % 4) == 0){
-            return true;
-        }
-        else {
-            return false;
-        }
+        else return (yearint % 4) == 0;
     }
 }
