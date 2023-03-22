@@ -64,11 +64,9 @@ public class Main {
     public static LinkedList ReverseList(LinkedList myList) {
 
         LinkedList<String> resList = new LinkedList<>();
-        String temp;
         int lenght = myList.size();
         for (int i = 0; i < lenght; i++) {
-            temp = ((LinkedList<String>) myList).removeLast();
-            resList.addLast(temp);
+            resList.addLast(((LinkedList<String>) myList).removeLast());
         }
         return resList;
     }
