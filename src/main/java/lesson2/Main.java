@@ -23,6 +23,7 @@ public class Main {
         System.out.println();
 
 //      Задание 2
+        System.out.print("Задание 2.");
         StringBuilder myString = new StringBuilder("TEST");
         myString.append("TEST".repeat(100));
         Write2File(myString.toString());
@@ -59,7 +60,6 @@ public class Main {
 
 
     }
-//            System.out.printf("строка %s - палиндром", myString);
 
 
 
