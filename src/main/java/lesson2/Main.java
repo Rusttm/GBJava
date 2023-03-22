@@ -23,11 +23,11 @@ public class Main {
         System.out.println();
 
 //      Задание 2
-        String myString = "TEST";
+        StringBuilder myString = new StringBuilder("TEST");
         for (int i = 0; i < 100; i++) {
-            myString += "TEST";
+            myString.append("TEST");
         }
-        Write2File(myString);
+        Write2File(myString.toString());
 
     }
     public static boolean CheckPalindrom(String st) {
