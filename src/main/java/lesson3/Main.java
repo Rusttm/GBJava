@@ -103,7 +103,7 @@ public class Main {
                 my_list.remove(i);
                 i--;
             }
-            catch (NumberFormatException ex) {}
+            catch (NumberFormatException ignored) {}
 
 
         }
