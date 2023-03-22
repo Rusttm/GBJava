@@ -24,9 +24,7 @@ public class Main {
 
 //      Задание 2
         StringBuilder myString = new StringBuilder("TEST");
-        for (int i = 0; i < 100; i++) {
-            myString.append("TEST");
-        }
+        myString.append("TEST".repeat(100));
         Write2File(myString.toString());
 
     }
