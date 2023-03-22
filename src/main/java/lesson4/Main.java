@@ -19,7 +19,7 @@ public class Main {
         System.out.print("Задача 2. ");
 //        2. Пусть дан LinkedList с несколькими элементами.
 //        Реализуйте метод, который вернет “перевернутый” список.
-        LinkedList<String> myList = new LinkedList<String>();
+        LinkedList<String> myList = new LinkedList<>();
         myList.add("1stelem");
         myList.add("2ndelem");
         myList.add("3thelem");
@@ -63,12 +63,11 @@ public class Main {
 
     public static LinkedList ReverseList(LinkedList myList) {
 
-        LinkedList<String> workList = myList;
-        LinkedList<String> resList = new LinkedList<String>();
+        LinkedList<String> resList = new LinkedList<>();
         String temp;
         int lenght = myList.size();
         for (int i = 0; i < lenght; i++) {
-            temp = workList.removeLast();
+            temp = ((LinkedList<String>) myList).removeLast();
             resList.addLast(temp);
         }
         return resList;
