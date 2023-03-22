@@ -1,5 +1,6 @@
 package lesson4;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -16,14 +17,30 @@ public class Main {
     }
 
     public static void FormatList() {
+        ArrayList<String> myList = new ArrayList<String>();
 
         while (true) {
             System.out.print("Введите строку: ");
             Scanner input =  new Scanner(System.in);
             String inputString = input.next();
-            System.out.println(inputString);
-            break;
+//            System.out.println(inputString);
+            if (inputString.equals("exit")) {
+                break;
+            }
+            if (inputString.equals("print")) {
+                for(int i = myList.size()-1; i >= 0; i--)
+                {
+                    System.out.println(myList.get(i));
+                }
+                break;
+            }
+            if (inputString.equals("revert")) {
+                myList.remove(myList.size()-1);
+                break;
+            }
+            myList.add(inputString);
         }
+        System.out.println(myList);
     }
 
 }
