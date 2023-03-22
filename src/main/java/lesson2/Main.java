@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Lesson 2");
 
-//        Задание1
+//      Задание1
         Scanner input =  new Scanner(System.in);
         System.out.print("Задание1. Введите строку: ");
         String paliString = input.next();
@@ -20,9 +20,11 @@ public class Main {
         else {
             System.out.printf("строка %s - не палиндром", paliString);
         }
+        System.out.println();
+
 //      Задание 2
         String myString = "TEST";
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 100; i++) {
             myString += "TEST";
         }
         Write2File(myString);
@@ -48,13 +50,19 @@ public class Main {
                 FileWriter fw = new FileWriter(newTextFile);
                 fw.write(st2file);
                 fw.close();
+                System.out.println("Файл mytextfile.txt записан корректно");
+
 
             } catch (IOException iox) {
                 //do stuff with exception
                 iox.printStackTrace();
+                System.out.println("Файл mytextfile.txt НЕ записан");
             }
-//            System.out.printf("строка %s - палиндром", myString);
+
 
     }
+//            System.out.printf("строка %s - палиндром", myString);
+
+
 
 }
