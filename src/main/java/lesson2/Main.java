@@ -8,6 +8,10 @@ public class Main {
         Scanner input =  new Scanner(System.in);
         System.out.print("Введите строку: ");
         String paliString = input.next();
+        boolean palindrom =  Palindrom(paliString);
+        if (palindrom) {
+            System.out.print("строка %s - это палиндром", paliString);
+        }
 
     }
     public static boolean Palindrom(String st) {
