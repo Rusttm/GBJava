@@ -10,7 +10,7 @@ public class Main {
         String paliString = input.next();
         boolean palindrom =  Palindrom(paliString);
         if (palindrom) {
-            System.out.print("строка %s - это палиндром", paliString);
+            System.out.printf("строка %s - это палиндром", paliString);
         }
 
     }
