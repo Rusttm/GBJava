@@ -73,10 +73,8 @@ public class Notebooks {
 
     @Override
     public String toString() {
-        return "Notebooks{" +
-                "name='" + name + '\'' +
-                ", brand='" + brand + '\'' +
-                ", color='" + color + '\'' +
+        return "Ноутбук " + name + ' ' + brand + ' ' + '{' +
+                "color='" + color + '\'' +
                 ", weight=" + weight +
                 ", diag=" + diag +
                 ", memory='" + memory + '\'' +
