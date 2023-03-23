@@ -53,6 +53,7 @@ public class Main {
 
         }
         if (filteredBase.size()>0) {
+            System.out.printf("По фильтру '%s' = '%s' выбраны следующие позиции: ", filterKey, filterValue);
             for (String position:
                  filteredBase) {
                 System.out.println(position);
