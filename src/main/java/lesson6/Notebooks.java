@@ -58,12 +58,10 @@ public class Notebooks {
     public boolean IsApplyFilter(String filterKey, String filterValue) {
 //        System.out.println(filterKey + filterValue);
         if (Objects.equals(filterKey, "name")) {
-
             return Objects.equals(filterValue, this.name);
         } else if (Objects.equals(filterKey, "brand")) {
             return Objects.equals(filterValue, this.brand);
         } else if (Objects.equals(filterKey, "color")) {
-
             return Objects.equals(filterValue, this.color);
         } else if (Objects.equals(filterKey, "memory")) {
             return Objects.equals(filterValue, this.memory);
