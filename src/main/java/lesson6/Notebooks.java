@@ -19,7 +19,7 @@ public class Notebooks {
         this.brand = noteBrand;
         this.color = noteColor;
         this.memory = noteMemory;
-        System.out.println("Создан ноутбук " + this.name  + this.brand);
+//        System.out.println("Создан ноутбук " + this.name  + this.brand);
     }
 
     public String getName() {
