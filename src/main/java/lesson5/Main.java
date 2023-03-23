@@ -1,7 +1,6 @@
 package lesson5;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 
 public class Main {
@@ -75,18 +74,14 @@ public class Main {
         Collections.sort(mapValues);
         Collections.reverse(mapValues); // descending
         Collections.sort(mapKeys);
-//        System.out.println(mapValues);
         LinkedHashMap<String, Integer> sortedMap = new LinkedHashMap<>();
         // делаем через итераторы
-        Iterator<Integer> valueIt = mapValues.iterator();
-        while (valueIt.hasNext()) {
-            Integer val = valueIt.next();
+        for (Integer val : mapValues) {
             Iterator<String> keyIt = mapKeys.iterator();
             while (keyIt.hasNext()) {
                 String key = keyIt.next();
                 Integer val1 = myHashMap.get(key);
-                Integer val2 = val;
-                if (val1.equals(val2)) {
+                if (val1.equals(val)) {
                     keyIt.remove();
                     sortedMap.put(key, val);
                     break;
